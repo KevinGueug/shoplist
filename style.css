@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+ul{
+    list-style: none;
+    font-size:24px;
+}
+h2{
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(131, 0, 163) 2px 2px;
+}
+.logo{
+    display:flex;
+    height:200px;
+    width:100%;
+    background-image: linear-gradient(to top, black, purple);
+} 
+.project{
+    background-color: black;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+#btn-rem{
+    background-image: url("https://img.icons8.com/nolan/32/000000/trash.png");
+    width:32px;
+    height:32px;
+    border: none;
+    padding:12px;
+    background-position: center;
+    background-color:transparent;
+}
+#btn-add{
+    background-image: url("https://img.icons8.com/nolan/32/000000/add.png");
+    width:32px;
+    height:32px;
+    border: none;
+    padding:12px;
+    background-position: center;
+    background-color:transparent;
+}
+#btn-add:active{
+    transform:scale(1.1);
+}
+#btn-rem:active{ 
+    transform:scale(1.1);
+}
+.box{
+    background-color:rgb(36, 36, 36);
+    width:340px;
+    height: auto;
+    padding:5px;
+    margin:5px;
+}
+
+li{
+    width:340px;
+    height:29px;
+    border:1px solid rgb(36, 36, 36);
+    background-color:grey;
+    transition: ease-out 0.3s;
+    color:rgb(255, 255, 255);
+    text-shadow:rgb(0, 0, 0) 2px 2px;
+}
+li:hover{
+    width:340px;
+    height:29px;
+    background-color:rgb(165, 165, 165);
+}
+.liste:visited{
+    text-decoration: line-through;
+}
+.done{
+    text-decoration: line-through;
+}
+.deleteListItem{,
+    display:flex;
+    float:right;
+    background-image: url("https://img.icons8.com/nolan/20/000000/delete-sign.png");
+    width: 20px;
+    height: 20px;
+    border:none;
+    margin-top:5px;
+    padding-top: 10px;
+    background-color: transparent;
+
+}
+.deleteListItem:hover{,
+    display:flex;
+    float:right;
+    background-image: url("https://img.icons8.com/nolan/20/000000/delete-sign.png");
+    width: 20px;
+    height: 20px;
+    border:none;
+    margin-top:5px;
+    padding-top: 10px;
+    animation: ani 0.1s infinite;
+    transition: all 0.3s;
+}
+    @keyframes ani {
+        50% {
+          transform: skew(10deg);
+        }
+        100% {
+          transform: skew(-10deg);
+        }
+      }
