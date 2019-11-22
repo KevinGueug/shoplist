@@ -22,7 +22,7 @@ h2{
     background-image: linear-gradient(to top, black, purple);
 } 
 .project{
-    background-color: black;
+    background-color:black);
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
@@ -114,7 +114,7 @@ li:hover{
 
       
       
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
 
     * {
         margin: 0;
@@ -132,17 +132,14 @@ li:hover{
         color:rgb(255, 255, 255);
         text-shadow: rgb(131, 0, 163) 2px 2px;
     }
-    .logo{
-        display:flex;
-        height:0px;
-        width:100%;
-        background-image: linear-gradient(to bottom purple, black );
-    } 
     .project{
-        background-color: rgb(36, 36, 36);
         display:flex;
         flex-wrap:wrap;
-        justify-content: space-around;
+    }
+    .logo{
+        display:none;
+    }
+ 
     }
     #btn-rem{
         background-image: url("https://img.icons8.com/nolan/32/000000/trash.png");
@@ -229,5 +226,4 @@ li:hover{
             }
           }
     
-          
           
